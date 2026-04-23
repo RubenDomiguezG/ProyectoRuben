@@ -66,6 +66,12 @@ npm install
 npm run dev
 ```
 
+
+## Flujo principal recomendado en frontend
+- **Principal**: `POST /api/v1/daily-logs/full` para registrar un día completo en una sola operación.
+- **Consulta agregada**: `GET /api/v1/daily-logs/full/{log_id}` y `GET /api/v1/daily-logs/full/by-date/{log_date}`.
+- **CRUD individuales** se mantienen para mantenimiento/edición puntual por recurso.
+
 ## Endpoints CRUD disponibles (v1)
 - `/api/v1/users`
 - `/api/v1/daily-logs`
